@@ -1,0 +1,118 @@
+<!-- 
+9. Formulário de Pesquisa e Seleção
+Crie um formulário mais avançado com:
+
+1. Botões de rádio (radio) para escolher o gênero.
+2. Caixas de seleção (checkbox) para escolher interesses (ex: Esportes, Tecnologia, Música).
+3. Um menu de seleção (select) para escolher o estado ou cidade. 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa e Seleção</title>
+</head>
+<body>
+    <h1>Formulário de Pesquisa e Seleção</h1>
+    <form action="">
+        <div class="form-item">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" autocomplete="name" required>
+        </div>
+        
+        <div class="form-item">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" autocomplete="email" required>
+        </div>
+
+        <fieldset>
+            <legend>Gênero</legend>
+
+            <div>
+                <input type="radio" name="genero" id="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="feminino">
+                <label for="feminino">Feminino</label>
+            </div>
+            <div>
+                <input type="radio" name="genero" id="outro">
+                <label for="outro">Prefiro não informar</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interesses</legend>
+            <div class="form-item">
+                <input type="checkbox" name="esportes" id="esportes">
+                <label for="esportes">Esportes</label>
+            </div>
+            <div class="form-item">
+                <input type="checkbox" name="tecnologia" id="tecnologia">
+                <label for="tecnologia">Tecnologia</label>
+            </div>
+            <div class="form-item">
+                <input type="checkbox" name="música" id="música">
+                <label for="música">Música</label>
+            </div>
+            <div class="form-item">
+                <input type="checkbox" name="cinema" id="cinema">
+                <label for="cinema">Cinema</label>
+            </div>
+            <div class="form-item">
+                <input type="checkbox" name="livros" id="livros">
+                <label for="livros">Livros</label>
+            </div>
+            <div class="form-item">
+                <input type="checkbox" name="viagens" id="viagens">
+                <label for="viagens">Viagens</label>
+            </div>
+            <div class="form-item">
+                <input type="checkbox" name="arte" id="arte">
+                <label for="arte">Arte</label>
+            </div>
+            <div class="form-item">
+                <input type="checkbox" name="comida" id="comida">
+                <label for="comida">Comida</label>
+            </div>
+        </fieldset>
+        <div class="form-item">
+            <label for="estado">Estado</label>
+            <select name="estado" id="estado">
+                <option value="" selected disabled>Selecione um estado</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+            </select>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

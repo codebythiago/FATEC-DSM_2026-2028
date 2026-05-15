@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Cálculo de Área de Triângulo</h1>
+
+  <div class="card">
+    <div class="input-group">
+      <label for="base">Base do Triângulo</label>
+      <input type="number" name="base" id="base">
+      <label for="unidade-base" class="sr-only">Unidade da Base do Triângulo</label>
+      <select name="unidade-base" id="unidade-base">
+        <option value="mm">Milímetro(s) (mm)</option>
+        <option value="cm">Centímetro(s) (cm)</option>
+        <option value="dm">Decímetro(s) (dm)</option>
+        <option value="m" selected>Metro(s) (m)</option>
+        <option value="dam">Decâmetro(s) (dam)</option>
+        <option value="hm">Hectômetro(s) (hm)</option>
+        <option value="km">Quilômetro(s) (km)</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="altura">Altura do Triângulo</label>
+      <input type="number" name="altura" id="altura">
+      <label for="unidade-altura" class="sr-only">Unidade da Altura do Triângulo</label>
+      <select name="unidade-altura" id="unidade-altura">
+        <option value="mm">Milímetro(s) (mm)</option>
+        <option value="cm">Centímetro(s) (cm)</option>
+        <option value="dm">Decímetro(s) (dm)</option>
+        <option value="m" selected>Metro(s) (m)</option>
+        <option value="dam">Decâmetro(s) (dam)</option>
+        <option value="hm">Hectômetro(s) (hm)</option>
+        <option value="km">Quilômetro(s) (km)</option>
+      </select>
+    </div>
+
+    <button type="button" id="calcular-btn">Calcular Área</button>
+    <div id="container-resultado">
+      <label for="unidade-area" class="sr-only">Unidade da Área do Triângulo</label>
+      <select name="unidade-area" id="unidade-area">
+        <option value="mm">Milímetro(s) (mm)</option>
+        <option value="cm">Centímetro(s) (cm)</option>
+        <option value="dm">Decímetro(s) (dm)</option>
+        <option value="m" selected>Metro(s) (m)</option>
+        <option value="dam">Decâmetro(s) (dam)</option>
+        <option value="hm">Hectômetro(s) (hm)</option>
+        <option value="km">Quilômetro(s) (km)</option>
+      </select>
+      <p>Área do Triângulo: <span id="res-unidade-area">00.00 m<sup>2</sup></span></p>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

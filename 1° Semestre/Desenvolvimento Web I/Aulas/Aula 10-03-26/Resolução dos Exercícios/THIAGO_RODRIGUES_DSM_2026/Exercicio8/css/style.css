@@ -1,0 +1,17 @@
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.perfil > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#habilidades {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+}

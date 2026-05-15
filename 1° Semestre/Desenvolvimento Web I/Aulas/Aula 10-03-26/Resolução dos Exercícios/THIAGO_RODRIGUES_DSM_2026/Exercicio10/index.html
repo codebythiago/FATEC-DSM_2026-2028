@@ -1,0 +1,86 @@
+<!--
+10. Página "Sobre Mim" com Semântica
+Crie uma página final utilizando as tags semânticas do HTML5 para organizar o conteúdo:
+
+<header> para o título do site.
+<nav> para links de navegação fictícios.
+<main> para o conteúdo principal.
+<section> e <article> para dividir os textos.
+<footer> para as informações de copyright.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Semântico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sobre Mim</h1>
+        <p>Conheça um pouco sobre mim!</p>
+        <nav aria-label="navegacao-principal">
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>   
+                <h2>Quem eu sou?</h2>
+                <p>Muito prazer! Me chamo Thiago Rodrigues dos Santos, tenho <span id='idade'></span> anos e sou um entusiasta de tecnologia e adoro aprender coisas novas. Estou estudando Desenvolvimento de Software Multiplataforma na Fatec de Ilha Solteira.</p>
+            </article>
+            <article>
+                <h2>Meus Hobbies</h2>
+                <ol>
+                    <li>Tocar Violão</li>
+                    <li>Escutar Música</li>
+                    <li>Programação</li>
+                    <li>Assistir Séries e Filmes</li>
+                </ol>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Minhas Habilidades</h2>
+                <div id="habilidades">
+                    <div id="soft_skills">
+                        <h3>Habilidades Sociais (Soft Skills)</h3>
+                        <ul>
+                            <li>Trabalho em Equipe</li>
+                            <li>Resiliência</li>
+                            <li>Adaptabilidade</li>
+                            <li>Inteligência Emocional</li>
+                            <li>Resolução de Problemas</li>
+                        </ul>
+                    </div>
+                    <div id="hard_skills">
+                        <h3>Habilidades Técnicas (Hard Skills)</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>MySQL e PostgresSQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <ul> 
+            <li><a href="tel:+5518998183117">+55 (18) 99818-3117</a></li>
+            <li><a href="https://github.com/codeByThiago" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/thiago-rodrigues-dos-santos-53680239a/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        </ul>
+        &copy; Site feito por Thiago Rodrigues dos Santos na FATEC de Ilha Solteira - 2026.
+    </footer>
+    <script src="js/calcular_idade.js"></script>
+</body>
+</html>

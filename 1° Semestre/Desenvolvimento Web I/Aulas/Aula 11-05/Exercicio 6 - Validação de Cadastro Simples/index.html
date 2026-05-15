@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Validação de Cadastro Simples</h1>
+    <div class="card">
+      <form id="form-cadastro-simples">
+        <div class="input-group">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" autocomplete="name" placeholder="Ex.: Thiago Rodrigues dos Santos"/>
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" autocomplete="email" placeholder="Ex.: thiago@email.com"/>
+        </div>
+        <div class="input-group">
+          <label for="senha">Digite sua Senha</label>
+          <input type="password" name="senha" id="senha" autocomplete="new-password" placeholder="Digite sua senha"/>
+        </div>
+        <div class="input-group">
+          <label for="senha-novamente">Digite novamente sua Senha</label>
+          <input type="password" name="senha-novamente" id="senha-novamente" autocomplete="off" placeholder="Digite novamente sua senha"/>
+        </div>
+        <button type="submit" id="cadastrar-btn">Cadastrar</button>
+      </form>
+    </div>
+  </body>
+</html>

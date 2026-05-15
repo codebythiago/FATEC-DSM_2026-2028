@@ -1,0 +1,31 @@
+ol > li {
+    padding-bottom: 20px;
+}
+
+:root {
+    --primeira-fonte: "DejaVu Sans";    
+    --segunda-fonte: "Bitstream Charter";
+    --terceira-fonte: "Bebas Neue";
+    --quarta-fonte: "Courier New";
+    --quinta-fonte: ;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fonte {
+    font-size: 24px;
+}
+
+.primeira-fonte {
+    font-family: var(--primeira-fonte);
+}
+
+.segunda-fonte {
+    font-family: var(--segunda-fonte);
+}
+
+.terceira-fonte {
+    font-family: var(--terceira-fonte);
+}

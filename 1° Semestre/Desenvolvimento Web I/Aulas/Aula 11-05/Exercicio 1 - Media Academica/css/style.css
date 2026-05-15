@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: #0D0028;
+  padding: 40px;
+  justify-content: center;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+}
+
+.card {
+  background: #140033;
+  padding: 36px 24px;
+  border-radius: 32px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+  width: clamp(350px, 50vw, 600px);
+  border: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+#form-media-academica {
+  background-color: #1B0A3D;
+  padding: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 16px;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #6EC8FF;
+}
+
+.form-group input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px;
+  border-radius: 4px;
+  color: white;
+  background: transparent;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+button {
+  color: white;
+  background: #5E1ABA;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  border-radius: 500px;
+  margin-bottom: 20px;
+
+}
+
+button:hover {
+  background-color: #7A2CF0;
+}
+
+#resultado, #situacao {
+  background: #2B115E;
+  text-align: center;
+  padding: 6px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}

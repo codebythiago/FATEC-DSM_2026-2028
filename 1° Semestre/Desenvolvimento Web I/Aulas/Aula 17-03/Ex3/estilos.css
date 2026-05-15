@@ -1,0 +1,18 @@
+h1{
+    /* 140 cores a serem utilizadas  */
+    /* color: darkmagenta;  */
+
+    /* Paleta RGB - RED - GREEN - BLUE */
+    /* color: rgba(48, 179, 55); */
+
+    /* Palesta RGBA */
+    color: rgb(255, 255, 255);
+    /* background-color: rgba(48, 179, 55, 0.5); */
+
+    /* Paleta HSL - Hue, Saturation, Lightness */
+    /* background-color: hsl(240, 100%, 30%); */
+    background-color: hsla(240, 100%, 30%, 0.25);
+
+    /* Paleta Hexadecimal */
+    background-color: #28284a;
+}

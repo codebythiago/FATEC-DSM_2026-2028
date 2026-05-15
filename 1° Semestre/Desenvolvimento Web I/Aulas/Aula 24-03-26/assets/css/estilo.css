@@ -1,0 +1,142 @@
+/* Reseta as configurações dos elementoes */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: black;
+}
+/* ------------Configs gerais---------------
+--------------------------------------- */
+.text-center{
+    text-align: center;
+}
+.margin-top-40{
+    margin-top: 40px;
+}
+/* ------------Cabeçalho---------------
+--------------------------------------- */
+.container-cabecalho{
+    padding: 20px;
+    background-color: rgb(0, 0, 67);
+    text-align: center;
+}
+
+.container-cabecalho h3{
+    font-weight: 600;
+    font-size: 2em;
+    color: #1190ff;
+}
+/* ------------Container Navegação---------------
+------------------------------------------------- */
+.container-navegacao{
+    text-align: center;
+    padding: 20px;
+    background-color: #06345d;
+}
+.container-navegacao a{
+    font-size: 1.5em;
+    margin: 0px 50px;
+    text-decoration: none;
+    color: #7cc2ff;
+}
+.container-navegacao a:hover{
+    color: lightcyan;
+}
+/* ------------Quem Somos---------------
+------------------------------------------------- */
+.container-quem-somos{
+    background-color: #05192a;
+    overflow: auto;
+}
+.container-quem-somos .servico{
+    float: center;
+    margin: 60px auto;
+    background-color: #00427b;
+    width: 50%;
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+.container-quem-somos .servico .icone{
+    margin-bottom: 10px;
+}
+.container-quem-somos .servico-texto{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.0em;
+    margin-top: 20px;
+    color: #81c4ff;
+}
+.container-quem-somos .servico-texto-realce{
+    color: white;
+    font-weight: bold;
+}
+/* ------------Serviços / contatos ---------------
+------------------------------------------------- */
+.container-servicos-contatos{
+    background-color: #082946;
+    padding: 80px;
+    text-align: center;
+}
+.container-servicos-contatos .botoes-servicos-contatos{
+    padding: 60px;
+    text-align: center;
+}
+.container-servicos-contatos .botoes-servicos-contatos a{
+    display: block;
+    max-width: 200px;
+    text-decoration: none;
+    font-size: 1.0em;
+    background-color: #008eb9;
+    color: white;
+    padding: 20px 60px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+
+.botoes-servicos-contatos a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Serviços */
+
+.container-servicos {
+    background-color: #05192a;
+    font-size: 1.1em;
+    padding: 60px;
+    overflow: auto;
+}
+
+.container-servicos h1 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.container-servicos h3 {
+    color: #2097ff;
+    padding: 20px 0;
+}
+
+.container-servicos article {
+    width: 40%;
+    margin: auto;
+}
+
+.container-servicos li {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+/* Rodapé da pagina */
+footer{
+    text-align: center;
+    color: gray;
+    background-color: black;
+    padding: 80px;
+}   
+/* Rodapé da pagina */

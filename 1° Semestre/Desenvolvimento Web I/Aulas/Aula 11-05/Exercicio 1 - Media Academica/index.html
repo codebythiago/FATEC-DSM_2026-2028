@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Cálculo de Média - Exercício 1</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Média de 4 Notas</h1>
+      <form id="form-media-academica">
+        <div class="form-group">
+          <label for="n1">Primeira Nota:</label>
+          <input
+            type="number"
+            step="0.5"
+            name="n1"
+            id="n1"
+            max="10"
+            min="0"
+            oninput="if(this.value > 10) this.value =10; if(this.value < 0) this.value = 0; this.value = this.value.replace(/[^0-9]/g, '')"
+            placeholder="Digite o valor da primeira nota"
+          />
+        </div>
+        <div class="form-group">
+          <label for="n2">Segunda Nota:</label>
+          <input
+            type="number"
+            step="0.5"
+            name="n2"
+            id="n2"
+            max="10"
+            min="0"
+            oninput="if(this.value > 10) this.value =10; if(this.value < 0) this.value = 0; this.value = this.value.replace(/[^0-9]/g, '')"
+            placeholder="Digite o valor da segunda nota"
+          />
+        </div>
+        <div class="form-group">
+          <label for="n3">Terceira:</label>
+          <input
+            type="number"
+            step="0.5"
+            name="n3"
+            id="n3"
+            max="10"
+            min="0"
+            oninput="if(this.value > 10) this.value =10; if(this.value < 0) this.value = 0; this.value = this.value.replace(/[^0-9]/g, '')"
+            placeholder="Digite o valor da terceira nota"
+          />
+        </div>
+        <div class="form-group">
+          <label for="n4">Quarta Nota:</label>
+          <input
+            type="number"
+            step="0.5"
+            name="n4"
+            id="n4"
+            max="10"
+            min="0"
+            oninput="if(this.value > 10) this.value =10; if(this.value < 0) this.value = 0; this.value = this.value.replace(/[^0-9]/g, '')"
+            placeholder="Digite o valor da quarta nota"
+          />
+        </div>
+        <button type="submit">Calcular Média</button>
+        <div id="resultado">Média:</div>
+        <div id="situacao">Situação:</div>
+      </form>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

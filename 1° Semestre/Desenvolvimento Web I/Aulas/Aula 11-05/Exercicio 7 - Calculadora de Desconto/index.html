@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Calculadora de Desconto</h1>
+    <div class="card">
+      <div class="input-group">
+        <label for="valor-produto">Valor do Produto</label>
+        <input type="number" name="valor-produto" id="valor-produto" placeholder="Ex.: 5,50, 499.97" oninput="if(this.value < 0) this.value = 0"/>
+      </div>
+      <div class="input-group">
+        <label for="valor-desconto">Valor do Desconto (%)</label>
+        <input type="number" name="valor-desconto" id="valor-desconto" placeholder="Ex.: 10, 20, 30" oninput="if(this.value < 0) this.value = 0"/>
+      </div>
+      <button type="button" id="calcular-btn">Calcular Valor Total</button>
+      <div id="resultado">
+        <p id="res-valor-produto">Valor do Produto: R$ 0,00</p>
+        <p id="res-valor-desconto">Valor do Desconto: R$ 0,00</p>
+        <p id="res-total">Valor Total: R$ 0,00</p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

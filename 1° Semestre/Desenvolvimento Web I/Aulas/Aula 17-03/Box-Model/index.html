@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo a trabalhar com CSS - Box Model</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main>
+        <h1>A Importância do Box Model</h1>
+        <p>Um pleno entendimento do Box Model nos permite organizar os elementos da forma que quisermos.</p>
+        <h2>Elementos com padrão Display: Inline</h2>
+        <p>Isso signica que, por padrão, o elemento vem com display: inline.</p>
+        <p>Exemplos de elementos com padrão box:</p>
+        <ul>
+            <li>&lt;span&gt;</li>
+            <li>&lt;img src=""&gt;</li>
+            <li>&lt;a href=""&gt;</li>
+            <li>&lt;strong</li>
+            <li>&lt;em&gt;</li>
+            <li>&lt;b&gt;</li>
+            <li>&lt;i&gt;</li>
+            <li>&lt;button&gt;</li>
+            <li>&lt;input&gt;</li>
+        </ul>
+        <h2>Elementos com padrão Display: Block</h2>
+        <p>Isso significa que, por padrão, esses elementos vem com display: block.</p>
+        <p>Exemplos de elementos com padrão box:</p>
+        <ul>
+            <li>&lt;h1&gt; , &lt;h2&gt;, .., &lt;h5&gt;, &lt;h6&gt;</li>
+            <li>&lt;p&gt;</li>
+            <li>&lt;div&gt;</li>
+            <li>&lt;header&gt;</li>
+            <li>&lt;main&gt;</li>
+            <li>&lt;footer&gt;</li>
+            <li>&lt;article&gt;</li>
+            <li>&lt;ul&gt;</li>
+            <li title="Esses aqui são exceções. Eles agem como elementos em Bloco.  No entanto, o display é list-item. (display: list-item)">&lt;li&gt;</li>
+            <li>&lt;section&gt;</li>
+        </ul>
+        <h2>Comparativo dos dois tipos com exemplo Visual</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Característica</th>
+                    <th>Block</th>
+                    <th>Inline</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cria nova linha?</td>
+                    <td>Sim</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>Largura Padrão</td>
+                    <td>100% do elemento-pai</td>
+                    <td>Apenas o conteúdo</td>
+                </tr>
+                <tr>
+                    <td>Aceita Width/Height?</td>
+                    <td>Sim</td>
+                    <td>Não</td>
+                </tr>
+                <tr>
+                    <td>Alinhamento</td>
+                    <td>Empilhados verticalmente</td>
+                    <td>Lado a lado horizontalmente.</td>
+                </tr>
+            </tbody>
+        </table>
+        <aside>
+            <h3>Dica Extra:</h3>
+            <p>Nota: existe também o atributo display: inline-block. Que aceita atributos como width e height, alinhamentos. Mas funciona também como um atributo inline. Sua largura padrão é o conteúdo.</p>
+            <p>Ele é ótimo para criar vários botões enfileirados lado a lado.</p>
+        </aside>
+        <h2>Exemplo Visual</h2>
+        <div>
+            Esse é um elemento &lt;div&gt; (Padrão Box). Ele ocupa a linha inteira.
+        </div>
+        <span>Esse é um elemento &lt;span&gt;</span>
+        <a href="">Esse é um elemento &lt;a&gt;</a>
+        <p class="box-model">Esse é um elemento &lt;p&gt;. <span>Elemento &lt;span&gt; dentro do elemento &lt;p&gt;.</span></p>
+        <p class="box-model">Esse é um elemento &lt;p&gt;. <strong>Elemento strong dentro de um elemento &lt;p&gt;</strong></p>
+    </main>
+    <footer>
+        <p>Site feito de exemplo para a Faculdade de Desenvolvolvimento de Software Multiplaforma em Março de 2026</p>
+    </footer>
+</body>
+</html>

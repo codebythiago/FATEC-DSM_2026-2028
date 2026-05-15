@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Apostila Prática de HTML5 - Fatec Ilha Solteira</title>
+    <style>
+        /* Um pouco de CSS apenas para organizar visualmente a apostila */
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; background-color: #f4f4f4; }
+        header, nav, main, section, article, aside, footer { 
+            border: 1px dashed #ccc; padding: 15px; margin-bottom: 10px; background: white; 
+        }
+        code { background: #eee; padding: 2px 5px; border-radius: 3px; font-family: monospace; }
+        table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .tag-info { color: #d63384; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📘 Guia Completo HTML5</h1>
+        <p>Esta página é um exemplo vivo das tags fundamentais.</p>
+        <nav>
+            <a href="#texto">Texto</a> | 
+            <a href="#midia">Mídia</a> | 
+            <a href="#tabelas">Tabelas</a> | 
+            <a href="#forms">Formulários</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="texto">
+            <h2>1. Estrutura de Texto</h2>
+            <article>
+                <h3>Títulos e Parágrafos</h3>
+                <p>O parágrafo é definido pela tag <code>&lt;p&gt;</code>. Podemos usar <strong>negrito para ênfase forte</strong> ou <em>itálico para ênfase leve</em>.</p>
+                
+                <h4>Listas:</h4>
+                <ul>
+                    <li>Item de lista não ordenada (bullet)</li>
+                    <li>Outro item</li>
+                </ul>
+                <ol>
+                    <li>Primeiro item da lista numerada</li>
+                    <li>Segundo item</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="midia">
+            <h2>2. Elementos de Mídia</h2>
+            <p>Imagens usam a tag <code>&lt;img&gt;</code>:</p>
+            <img src="https://via.placeholder.com/150" alt="Exemplo de imagem">
+            
+            <p>Áudio nativo:</p>
+            <audio controls>
+                <source src="seu-audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta áudio.
+            </audio>
+        </section>
+
+        <section id="tabelas">
+            <h2>3. Dados Tabulares</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Função</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;tr&gt;</code></td>
+                        <td>Cria uma linha</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;td&gt;</code></td>
+                        <td>Cria uma célula de dados</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="forms">
+            <h2>4. Interação (Formulários)</h2>
+            <form action="#">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" placeholder="Digite aqui..."><br><br>
+                
+                <label>Nível de interesse:</label><br>
+                <select>
+                    <option value="alto">Alto</option>
+                    <option value="medio">Médio</option>
+                    <option value="baixo">Baixo</option>
+                </select><br><br>
+                
+                <button type="button" onclick="alert('Botão clicado!')">Enviar Dados</button>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        <h4>💡 Dica de Estudo</h4>
+        <p>Inspecione esta página (F12 no navegador) para ver como as tags se organizam no DOM!</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 - Criado para fins educativos - FATEC Ilha Solteira.</p>
+    </footer>
+
+</body>
+</html>

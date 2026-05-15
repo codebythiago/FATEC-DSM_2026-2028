@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: aquamarine;
+    padding: 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    /* Define que não poderá ser sobrescrito este código */
+    border: 2px solid yellow !important;
+
+}

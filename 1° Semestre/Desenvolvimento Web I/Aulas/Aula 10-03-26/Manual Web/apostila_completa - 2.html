@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostila Completa HTML5 - Guia de Tags</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --bg: #f4f7f6;
+            --code-bg: #272822;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: var(--bg); margin: 0; padding: 0; }
+        header { background: var(--primary); color: white; padding: 2rem; text-align: center; border-bottom: 5px solid var(--accent); }
+        nav { background: #fff; padding: 10px; position: sticky; top: 0; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; z-index: 100; }
+        nav a { margin: 0 15px; text-decoration: none; color: var(--primary); font-weight: bold; }
+        
+        .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; border-radius: 8px; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+        
+        section { margin-bottom: 40px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+        h2 { color: var(--accent); border-left: 5px solid var(--primary); padding-left: 10px; }
+        
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+        
+        .explicacao { background: #f9f9f9; padding: 15px; border-radius: 5px; }
+        .exemplo-box { background: #fff; border: 1px solid #ddd; padding: 15px; border-radius: 5px; }
+        
+        pre { background: var(--code-bg); color: #f8f8f2; padding: 15px; border-radius: 5px; overflow-x: auto; font-size: 14px; }
+        code { font-family: 'Consolas', monospace; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: var(--primary); color: white; }
+        
+        footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+        .tag-badge { background: #eef2f3; color: #d63384; padding: 2px 6px; border-radius: 4px; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📘 Apostila Mestra de HTML5</h1>
+    <p>O guia visual para aprender e consultar tags HTML.</p>
+</header>
+
+<nav>
+    <a href="#semantica">Semântica</a>
+    <a href="#texto">Texto</a>
+    <a href="#midia">Mídia</a>
+    <a href="#tabelas">Tabelas</a>
+    <a href="#formularios">Forms</a>
+</nav>
+
+<div class="container">
+
+    <section id="semantica">
+        <h2>1. Estrutura Semântica (Layout)</h2>
+        <p>Tags que explicam ao navegador o que cada parte do site faz.</p>
+        <div class="grid">
+            <div class="explicacao">
+                <ul>
+                    <li><span class="tag-badge">&lt;header&gt;</span>: Topo da página ou seção.</li>
+                    <li><span class="tag-badge">&lt;nav&gt;</span>: Menus de navegação.</li>
+                    <li><span class="tag-badge">&lt;main&gt;</span>: Conteúdo único da página.</li>
+                    <li><span class="tag-badge">&lt;section&gt;</span>: Agrupamento de temas.</li>
+                    <li><span class="tag-badge">&lt;article&gt;</span>: Conteúdo independente.</li>
+                    <li><span class="tag-badge">&lt;aside&gt;</span>: Barras laterais.</li>
+                    <li><span class="tag-badge">&lt;footer&gt;</span>: Rodapé.</li>
+                </ul>
+            </div>
+            <div class="exemplo-box">
+                <pre><code>&lt;header&gt;
+  &lt;h1&gt;Meu Blog&lt;/h1&gt;
+  &lt;nav&gt;Home | Contato&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+  &lt;article&gt;Conteúdo...&lt;/article&gt;
+&lt;/main&gt;</code></pre>
+            </div>
+        </div>
+    </section>
+
+    <section id="texto">
+        <h2>2. Formatação de Texto</h2>
+        <div class="grid">
+            <div class="explicacao">
+                <p>Usadas para dar hierarquia e ênfase.</p>
+                <ul>
+                    <li><span class="tag-badge">&lt;h1&gt; a &lt;h6&gt;</span>: Títulos.</li>
+                    <li><span class="tag-badge">&lt;p&gt;</span>: Parágrafos.</li>
+                    <li><span class="tag-badge">&lt;strong&gt;</span>: Importância (Negrito).</li>
+                    <li><span class="tag-badge">&lt;em&gt;</span>: Ênfase (Itálico).</li>
+                    <li><span class="tag-badge">&lt;a&gt;</span>: Links (Atributo <code>href</code>).</li>
+                </ul>
+            </div>
+            <div class="exemplo-box">
+                <h3>Este é um H3</h3>
+                <p>Um parágrafo com <strong>negrito</strong> e um <a href="#">Link Exemplo</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="midia">
+        <h2>3. Mídia e Atributos</h2>
+        <div class="grid">
+            <div class="explicacao">
+                <p>Atributos cruciais:</p>
+                <ul>
+                    <li><code>src</code>: Caminho do arquivo.</li>
+                    <li><code>alt</code>: Texto alternativo (Acessibilidade).</li>
+                    <li><code>controls</code>: Exibe botões de play/pause.</li>
+                </ul>
+            </div>
+            <div class="exemplo-box">
+                <p>Imagem:</p>
+                <img src="https://picsum.photos/200/100" alt="Imagem aleatória" style="border-radius: 8px;">
+                <p>Áudio:</p>
+                <audio controls style="width: 100%;">
+                    <source src="#" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </section>
+
+    <section id="tabelas">
+        <h2>4. Tabelas (Dados Estruturados)</h2>
+        <div class="explicacao">
+            <p>Organização em linhas (<span class="tag-badge">tr</span>) e células (<span class="tag-badge">td</span>).</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Curso HTML</td>
+                        <td>R$ 0,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="formularios">
+        <h2>5. Formulários (Inputs)</h2>
+        <div class="grid">
+            <div class="explicacao">
+                <p>Captura de dados. O atributo <code>type</code> define o comportamento do input.</p>
+            </div>
+            <div class="exemplo-box">
+                <form onsubmit="return false">
+                    <label>Texto:</label><br>
+                    <input type="text" placeholder="Digite algo..."><br><br>
+                    
+                    <label>Senha:</label><br>
+                    <input type="password" value="12345"><br><br>
+                    
+                    <label>Data:</label><br>
+                    <input type="date"><br><br>
+                    
+                    <label>Cor:</label>
+                    <input type="color">
+                </form>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>Apostila de Estudo - HTML5 Semântico e Prático &copy; 2026</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 2</title>
+    <style>
+        div.teste{
+            background-color: red;
+        }
+
+        .cor-fonte{
+            color: white;
+        }
+
+        .nome-fonte{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 25px;
+        }
+
+        div li#primeiro{
+            color: blue;
+            background-color: green;
+        }
+
+        div li.terceiro{
+            color: cyan;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div>Este é um conteúdo de um elemento div.</div>
+    <div>Aqui temos outro elemento div.</div>
+    <span>Este é um elemento span.</span>
+
+    <div class="teste cor-fonte nome-fonte" >
+        <p>Teste de Parágrafo</p>
+    </div>
+
+    <div>
+        <h2>Lista Desordenada</h2>
+
+        <ul>
+            <li id="primeiro">Primeiro Elemento da Lista</li>
+            <li>Segundo Elemento da Lista</li>
+            <li class="terceiro">Terceiro Elemento da Lista</li>
+            <li>Quarto Elemento da Lista</li>
+            <li>Quinto Elemento da Lista</li>
+        </ul>
+    </div>
+</body>
+</html>

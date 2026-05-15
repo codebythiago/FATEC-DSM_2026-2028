@@ -1,0 +1,329 @@
+/* Esse código foi escrito por Thiago Rodrigues no Curso de DSM 2026 */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-titulo: "Archivo Black", sans-serif;
+    --font-default: Arial, Helvetica, sans-serif;
+    --cor-principal: #18025a;
+    --cor-secundaria: #1e0275;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-default);
+}
+
+
+header {
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: var(--font-titulo);
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.322);
+    letter-spacing: 3px;
+    text-align: center;
+    padding: 100px;
+}
+
+div.container {
+    display: flex;
+}
+
+main {
+    background-color: var(--cor-terciaria);
+    padding: 10px;
+    min-height: 100vh;
+    width: 75%;
+}
+
+.container-exercicio {
+    padding: 20px;
+}
+
+/* NÍVEL 2  */
+
+/* Exercício 17: Classe destaque */
+.destaque {
+    background-color: gray;
+}
+
+/* Exercício 18: Seletor por ID */
+#p-green {
+    color: green;
+}
+
+/* Exercício 26: Ocultar elemento */
+.oculto {
+    display: none;
+}
+
+/* Exercício 19: Estilização global dos parágrafos para cor Grafite */
+
+p {
+    color: #4a4b4b;
+}
+
+/* Exercício 20: Card com border-radius */
+.card {
+    border: 1px solid rgba(0,0,0,0.089);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #f3f2f2;
+    max-width: 300px;
+}
+
+/* Exercício 21: Classe caixa com padding: 30px */
+.caixa {
+    padding: 30px;
+}
+
+/* Exercício 25 e 31: Background e Opacity */
+.image-div {
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/estremote.jpeg);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+/* Exercício 27: Tabela com linhas alternadas */
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+th {
+    background-color: lightblue;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+/* Exercício 29: Texto alinhado à direita */
+.text-right {
+    text-align: right;
+}
+
+/* Exercício 32: Classes Sucesso e Erro */
+.sucesso {
+    color: green;
+    font-weight: bold;
+}
+
+.erro {
+    color: red;
+    font-weight: bold;
+}
+
+/* Exercício 34: Input com :focus */
+.input-focus-green:focus {
+    border-color: green;
+}
+
+/* Exercício 35: Centralização com margin auto */
+.margin-auto {
+    margin: auto;
+}
+
+.div-centralizada {
+    background-color: gray;
+    width:300px;
+    height:200px;
+}
+
+/* NÍVEL 3 */
+
+/* Exercício 36: Divs lado a lado com Float left e right */
+
+.div-float-caixa {
+    margin-right: 10px;
+    padding: 10px
+}
+
+.float-left {
+    background-color: lightgreen;
+    float: left;
+}
+
+/* Exercício 37: Duas colunas 50% */
+.coluna-1, .coluna-2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Exercício 38: Propriedade clear: both para footer não subir */
+
+.clear-both {
+    clear: both;
+}
+
+/* Exercício 39: Layout três colunas */
+.tres-colunas {
+    overflow: hidden;
+}
+
+.tres-colunas .coluna {
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+}
+
+/* Exercício 41: Sidebar com 25% da tela */
+.sidebar {
+    color: white;
+    background-color: var(--cor-secundaria);
+    width: 25%;
+    padding: 20px;
+}
+
+.sidebar a {
+    display: block;
+    color: lightblue;
+}
+
+.sidebar a:hover {
+    color: rgb(78, 185, 221);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Exercício 42: Imagem com float */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.float-right {
+    float: right;
+} 
+
+img.float-right {
+    max-width: 300px;
+}
+
+/* Exercício 43: Banner principal 100% */
+
+.banner-geral {
+    width: 100%;
+    height: 250px;
+    background-image: url("../img/fatec.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-geral h2 {
+    color: white;
+    font-size: 32px;
+    text-shadow: 2px 2px 5px black;
+}
+
+/* Exercício 45: Menu com display inline */
+
+.menu-inline {
+    list-style: none;
+    text-align: center;
+    background-color: #333;
+    padding: 15px;
+}
+
+.menu-inline li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.menu-inline a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-inline a:hover {
+    color: #ffcc00;
+}
+
+/* Exercício 46: Galeria de Fotos */
+
+.container-galeria-fotos {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.sol {
+    float: left;
+    max-width: 200px;
+}
+
+.mercurio {
+    float: left;
+    max-width: 40px;
+}
+
+.venus {
+    float: left;
+    max-width: 50px;
+}
+
+.marte {
+    float: left;
+    max-width: 70px;
+}
+
+/* Exercício 47: Bordas diferentes */
+.caixa-com-bordas-diferentes {
+    margin: 10px;
+    height: 100px;
+    width: 100px;
+    border-top: 5px solid black;
+    border-right: 6px solid red;
+    border-bottom: 7px solid green;
+    border-left: 8px solid blue;
+}
+
+/* Exercício 49: Melhor leitura com line-height */
+.line-height-5 {
+    line-height: 1.5;
+}
+
+/*  Rodapé - Exercício 48  */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background: var(--cor-secundaria);
+    padding: 30px;
+    text-align: center;
+    clear: both;
+}
+
+@media only screen and (min-width: 1024px) {
+    .sidebar h2 {
+        font-size: 32px;
+    }
+    
+    .sidebar a {
+        font-size: 20px;
+    }
+}

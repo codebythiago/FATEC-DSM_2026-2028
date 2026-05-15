@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Simulador de Vendas</title>
+</head>
+<body>
+    <div class="card">
+        <h2>Resumo de Pedido</h2>
+
+        <label for="produto">Produto:</label>
+        <input type="text" name="produto" id="produto" step="1" placeholder="Ex.: Teclado Mecânico" oninput="atualizar()">
+
+        <label for="preco">Preço Unitário:</label>
+        <input type="number" name="preco" id="preco" step=".01" min="0" oninput="atualizar()">
+
+        <label for="quant">Quantidade:</label>
+        <input type="number" name="quant" id="quant" min="0" oninput="atualizar()">
+
+        <hr>
+
+        <p>Produto: <strong id="resumoNome">---</strong></p>
+
+        <div class="total-box">
+            TOTAL: R$ <span id="resumoTotal">0,00</span>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

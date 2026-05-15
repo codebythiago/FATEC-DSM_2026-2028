@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.layout{
+    margin: 50px;
+padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.link{
+    text-decoration: none;
+    background-color: rgb(108, 119, 140);
+    color: white;
+    min-width: 200px;
+    padding: 10px 30px;
+    margin:10px;
+    border-radius: 20px;
+
+}
+
+.link:hover{
+    background-color:rgb(96, 115, 150); 
+    color: rgb(151, 151, 151);
+}
+
+p{
+    margin: 10px;
+    padding: 10px;
+}
