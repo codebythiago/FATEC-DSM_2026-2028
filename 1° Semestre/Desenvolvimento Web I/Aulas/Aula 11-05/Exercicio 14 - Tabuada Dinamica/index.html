@@ -1,13 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Tabuada Dinâmica</h1>
+    <p id="desc">
+      O usuário digita um número e o JavaScript gera automaticamente a tabuada
+      de 1 a 10 dentro de uma lista (&lt;ul&gt;) ou tabela.
+    </p>
+    <div class="card">
+      <div class="input-group">
+        <label for="numero">Número</label>
+        <input type="number" name="numero" id="numero" />
+      </div>
+      <button type="button" id="gerar-btn">Gerar Tabuada</button>
+      <ul id="tabuada">
 
-  <script src="js/script.js"></script>
-</body>
+      </ul>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
