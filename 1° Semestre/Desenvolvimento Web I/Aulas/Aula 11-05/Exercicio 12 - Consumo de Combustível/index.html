@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Projeto</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Cálculo de Consumo de Combustível</h1>
+    <p>Utilize</p>
+    <form action="" id="form-consumo-combustivel">
+      <div class="input-group">
+        <label for="distancia-percorrida">Distância Percorrida (km):</label>
+        <input
+          type="number"
+          name="distancia-percorrida"
+          id="distancia-percorrida"
+          step="0.01"
+          oninput="if (this.value < 0) this.value = 0;"
+        />
+      </div>
+      <div class="input-group">
+        <label for="total-combustivel-gasto"
+          >Total de Combustível Gasto (L):</label
+        >
+        <input
+          type="number"
+          name="total-combustivel-gasto"
+          id="total-combustivel-gasto"
+          step="0.01"
+          oninput="if (this.value < 0) this.value = 0;"
+        />
+      </div>
+      <button type="submit" id="calcular-btn">Calcular</button>
+    </form>
+    <div id="resultado">
+      <p id="p-distancia">Distância percorrida: <strong>0.00 km</strong></p>
+      <p id="p-litros">Quantidade de Litros usados: <strong>0.00 l</strong></p>
+      <p id="p-consumo-medio">Consumo médio: <strong>0.00 km/l</strong></p>
+    </div>
 
-<h1>Projeto novo</h1>
-
-<script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
