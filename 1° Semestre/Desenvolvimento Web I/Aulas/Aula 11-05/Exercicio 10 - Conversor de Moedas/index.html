@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Conversor de Moedas</h1>
+    <div class="card">
+        <form id="form-moedas">
+            <div class="input-group">
+                <label for="valor">Valor:</label>
+                <input type="number" name="valor" id="valor">
+            </div>
+            <div class="input-group">
+                <label for="moedaDe">Converter de:</label>
+                <select name="moedaDe" id="moedaDe">
+                    <option value="BRL">Real (BRL)</option>
+                    <option value="USD">Dólar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="JPY">Iene (JPY)</option>
+                    <option value="CNY">Yuan (CHY)</option>
+                </select>                
+            </div>
+            <div class="input-group">
+                <label for="moedaPara">Para</label>
+                <select name="moedaPara" id="moedaPara">
+                    <option value="BRL">Real (BRL)</option>
+                    <option value="USD">Dólar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">Libra Esterlina (GBP)</option>
+                    <option value="JPY">Iene (JPY)</option>
+                    <option value="CNY">Yuan (CHY)</option>
+                </select>
+            </div>
+            <button type="submit">Converter</button>
+            <div id="resultado">
+
+            </div>
+        </form>
+    </div>
+    <script src="js/env.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
