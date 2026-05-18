@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.055);
+  border-radius: 32px;
+  flex-flow: column nowrap;
+  gap: 16px;
+  width: clamp(300px, 35vw, 600px);
+}
+
+.input-group {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.input-group label {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.input-group input[type=number],.input-group select {
+  border: 1px solid rgba(0, 0, 0, 0.055);
+  border-radius: 12px;
+  padding: 8px;
+}
+
+button#converter-btn {
+  background-color: rgb(59, 3, 190);
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+button#converter-btn:hover {
+  background-color: rgb(41, 1, 133);
+}
+
+#resultado {
+  border: 1px solid rgba(0, 0, 0, 0.055);
+  padding: 12px;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 8px;
+}
