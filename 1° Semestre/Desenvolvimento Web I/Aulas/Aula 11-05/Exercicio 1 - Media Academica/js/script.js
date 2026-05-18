@@ -1,5 +1,6 @@
 const formMedia = document.getElementById("form-media-academica");
-const divResultado = document.getElementById("resultado");
+const resultadoContainer = document.getElementById('resultado')
+const divMedia = document.getElementById("media");
 const divSituacao = document.getElementById("situacao");
 
 formMedia.addEventListener("submit", (event) => {
@@ -17,16 +18,19 @@ function calcular() {
   let media = (n1 + n2 + n3 + n4) / 4;
 
   if (media >= 6) {
-    divResultado.innerHTML = `Média: <strong>${media}</strong>`;
-    divSituacao.innerHTML = `Situação: <strong>Aprovado</strong>`;
-    divSituacao.style.background = "#46a84f";
+    divMedia.innerHTML = `<b>Média</b>: ${media}`;
+    divSituacao.innerHTML = `<b>Situação</b>: Aprovado`;
+    resultadoContainer.style.background = "#40d64f62";
+    resultadoContainer.style.borderColor = "#40d64f";
   } else if (media > 3) {
-    divResultado.innerHTML = `Média: <strong>${media}</strong>`;
-    divSituacao.innerHTML = `Situação: <strong>Exame</strong>`;
-    divSituacao.style.background = "#c0671f";
+    divMedia.innerHTML = `<b>Média</b>: ${media}`;
+    divSituacao.innerHTML = `<b>Situação</b>: Exame`;
+    resultadoContainer.style.background = "#ff8d3062";
+    resultadoContainer.style.borderColor = "#ff8d30";
   } else {
-    divResultado.innerHTML = `Média: <strong>${media}</strong>`;
-    divSituacao.innerHTML = `Situação: <strong>Reprovado</strong>`;
-    divSituacao.style.background = "#ff0000";
+    divMedia.innerHTML = `<b>Média</b>: ${media}</strong>`;
+    divSituacao.innerHTML = `<b>Situação</b>: Reprovado`;
+    resultadoContainer.style.background = "#ff000062";
+    resultadoContainer.style.borderColor = "#ff0000";
   }
 }
