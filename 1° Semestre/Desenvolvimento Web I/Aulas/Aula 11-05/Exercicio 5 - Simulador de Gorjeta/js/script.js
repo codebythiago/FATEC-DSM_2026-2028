@@ -13,9 +13,9 @@ calcularBtn.addEventListener('click', () => {
 
   let valorGorjeta = calcularGorjeta(valorConta, porcentagemGorjeta)
 
-  textoConta.innerHTML = `Valor da Conta: R$ ${valorConta.toFixed(2)}`
-  textoGorjeta.innerHTML = `Valor da Gorjeta: R$ ${valorGorjeta.toFixed(2)}`
-  textoTotal.innerHTML = `Valor Total: R$ ${(valorConta + valorGorjeta).toFixed(2)}`
+  textoConta.innerHTML = "R$ " + valorConta.toFixed(2);
+  textoGorjeta.innerHTML = "R$ " + valorGorjeta.toFixed(2);
+  textoTotal.innerHTML = "R$ " + (valorConta + valorGorjeta).toFixed(2);
 })
 
 document.addEventListener('keydown', (event) => {
