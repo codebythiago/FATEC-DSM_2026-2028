@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
-  <title>Document</title>
+  <title>Cálculo de Área do Triângulo - Exercício 4</title>
 </head>
 <body>
   <h1>Cálculo de Área de Triângulo</h1>
@@ -12,7 +12,7 @@
   <div class="card">
     <div class="input-group">
       <label for="base">Base do Triângulo</label>
-      <input type="number" name="base" id="base">
+      <input type="number" name="base" id="base" oninput="if (this.value < 0) this.value = 0">
       <label for="unidade-base" class="sr-only">Unidade da Base do Triângulo</label>
       <select name="unidade-base" id="unidade-base">
         <option value="mm">Milímetro(s) (mm)</option>
@@ -27,7 +27,7 @@
 
     <div class="input-group">
       <label for="altura">Altura do Triângulo</label>
-      <input type="number" name="altura" id="altura">
+      <input type="number" name="altura" id="altura" oninput="if (this.value < 0) this.value = 0">
       <label for="unidade-altura" class="sr-only">Unidade da Altura do Triângulo</label>
       <select name="unidade-altura" id="unidade-altura">
         <option value="mm">Milímetro(s) (mm)</option>
@@ -52,7 +52,7 @@
         <option value="hm">Hectômetro(s) (hm)</option>
         <option value="km">Quilômetro(s) (km)</option>
       </select>
-      <p>Área do Triângulo: <span id="res-unidade-area">00.00 m<sup>2</sup></span></p>
+      <p><b>Área do Triângulo:</b> <span id="res-unidade-area">0.00 m<sup>2</sup></span></p>
     </div>
   </div>
   <script src="js/script.js"></script>
