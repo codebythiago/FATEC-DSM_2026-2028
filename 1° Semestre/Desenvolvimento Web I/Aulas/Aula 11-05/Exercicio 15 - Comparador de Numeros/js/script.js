@@ -1,4 +1,4 @@
-const formComparador = document.getElementById("form-comparador");
+const compararBtn = document.querySelector("#comparar-btn");
 
 function comparar2Numeros(num1, num2) {
   if (num1 == num2) {
@@ -10,7 +10,13 @@ function comparar2Numeros(num1, num2) {
   }
 }
 
-formComparador.addEventListener("submit", (event) => {
+document.addEventListener('keydown', (event) => {
+  if(event.key === "Enter") {
+    compararBtn.click();
+  }
+})
+
+compararBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
   const num1 = Number(document.querySelector("#num1").value) || 0;
