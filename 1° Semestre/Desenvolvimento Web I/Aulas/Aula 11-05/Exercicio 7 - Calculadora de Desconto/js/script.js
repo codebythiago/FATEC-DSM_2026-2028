@@ -13,9 +13,9 @@ calcularBtn.addEventListener('click', () => {
 
   let valorDesconto = calcularGorjeta(valorProduto, porcentagemDesconto)
 
-  textoProduto.innerHTML = `Valor do Produto: R$ ${valorProduto.toFixed(2)}`
-  textoDesconto.innerHTML = `Valor do Desconto: R$ ${valorDesconto.toFixed(2)}`
-  textoTotal.innerHTML = `Valor Total: R$ ${(valorProduto - valorDesconto).toFixed(2)}`
+  textoProduto.innerHTML = `R$ ${valorProduto.toFixed(2)}`
+  textoDesconto.innerHTML = `R$ ${valorDesconto.toFixed(2)}`
+  textoTotal.innerHTML = `R$ ${(valorProduto - valorDesconto).toFixed(2)}`
 })
 
 document.addEventListener('keydown', (event) => {
