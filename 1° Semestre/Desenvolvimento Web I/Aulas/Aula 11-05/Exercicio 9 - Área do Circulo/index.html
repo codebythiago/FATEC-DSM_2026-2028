@@ -12,8 +12,8 @@
   <div class="card">
     <div class="input-group">
       <label for="base">Valor do Raio</label>
-      <input type="number" name="raio" id="raio" oninput="if(this.value < 0) this.value = 0">
-      <label for="unidade-raio" >Unidade do Raio</label>
+      <input type="number" name="raio" id="raio" oninput="if(this.value < 0) this.value = 0" placeholder="Ex.: 10, 4.15. 213...">
+      <label for="unidade-raio">Unidade do Raio</label>
       <select name="unidade-raio" id="unidade-raio">
         <option value="mm">Milímetro(s) (mm)</option>
         <option value="cm">Centímetro(s) (cm)</option>
@@ -37,7 +37,7 @@
         <option value="hm">Hectômetro(s) (hm)</option>
         <option value="km">Quilômetro(s) (km)</option>
       </select>
-      <p>Área do Círculo: <span id="res-unidade-area">00.00 m<sup>2</sup></span></p>
+      <p>Área do Círculo: <b><span id="res-unidade-area">0.00 m<sup>2</sup></span></b></p>
     </div>
   </div>
   <script src="js/script.js"></script>
