@@ -4,7 +4,7 @@ function criaTabuada(numero) {
   let tabuada = "";
 
   for (let i = 0; i <= 10; i++) {
-    tabuada += `<li>${numero} &times; ${i} = ${numero * i}</li>`;
+    tabuada += `<li>${numero} &times; ${i} = ${(numero * i).toFixed(2)}</li>`;
   }
 
   return tabuada;
