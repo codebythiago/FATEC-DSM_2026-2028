@@ -8,7 +8,6 @@
   </head>
   <body>
     <h1>Cálculo de Consumo de Combustível</h1>
-    <p>Utilize</p>
     <form action="" id="form-consumo-combustivel">
       <div class="input-group">
         <label for="distancia-percorrida">Distância Percorrida (km):</label>
@@ -18,6 +17,7 @@
           id="distancia-percorrida"
           step="0.01"
           oninput="if (this.value < 0) this.value = 0;"
+          placeholder="Ex.: 10, 1.4, 653.12..."
         />
       </div>
       <div class="input-group">
@@ -30,14 +30,15 @@
           id="total-combustivel-gasto"
           step="0.01"
           oninput="if (this.value < 0) this.value = 0;"
+          placeholder="Ex.: 6, 1.42, 40.1"
         />
       </div>
       <button type="submit" id="calcular-btn">Calcular</button>
     </form>
     <div id="resultado">
-      <p id="p-distancia">Distância percorrida: <strong>0.00 km</strong></p>
+      <p id="p-distancia">Distância Percorrida: <strong>0.00 km</strong></p>
       <p id="p-litros">Quantidade de Litros usados: <strong>0.00 l</strong></p>
-      <p id="p-consumo-medio">Consumo médio: <strong>0.00 km/l</strong></p>
+      <p id="p-consumo-medio">Consumo médio: <strong>Informe os litros usados</strong></p>
     </div>
 
     <script src="js/script.js"></script>
