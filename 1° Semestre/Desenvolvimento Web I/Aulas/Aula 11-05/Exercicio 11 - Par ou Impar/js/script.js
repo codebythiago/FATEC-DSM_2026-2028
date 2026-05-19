@@ -10,5 +10,5 @@ document.getElementById('form-par-impar').addEventListener('submit', (event) => 
 
   const valorNum = Number(document.getElementById('valor-num').value);
 
-  document.getElementById('resultado').innerHTML = `${valorNum} é <strong>${parOuImpar(valorNum)}</strong>`;
+  document.getElementById('resultado').innerHTML = `<p>${valorNum} é <strong>${parOuImpar(valorNum)}</strong></p>`;
 })

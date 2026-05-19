@@ -13,20 +13,16 @@
   </head>
   <body>
     <h1>Par ou Ímpar</h1>
-    <p id="descricao">
-      Um campo número que, ao ser processado, indica se o número digitado é par
-      ou ímpar através de uma manipulação de DOM.
-    </p>
 
     <form id="form-par-impar">
       <div class="input-group">
         <label for="valor-num">Digite o valor do número:</label>
-        <input type="number" name="valor-num" id="valor-num" required/>
+        <input type="number" name="valor-num" id="valor-num" required />
       </div>
-      <button type="submit" id="processar-btn">Processar</button>      
+      <button type="submit" id="processar-btn">Processar</button>
+      <div id="resultado"><p>0 é <strong>par</strong></p></div>
     </form>
 
-    <div id="resultado">0 é <strong>par</strong></div>
     <script src="js/script.js"></script>
   </body>
 </html>
