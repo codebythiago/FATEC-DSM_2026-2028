@@ -32,12 +32,28 @@ body {
   background: white;
   border-radius: 16px;
   padding: 16px;
-  font-size: 64px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
   border: 2px solid #c9c9c96c;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   color: rgb(59, 84, 226);
   background-color: #ffffff;
   font-family: "DS-DIGITAL";
+}
+
+#display-cronometro h2 {
+  font-size: 64px;
+}
+
+#display-cronometro h3 {
+  font-size: 24px;
+  opacity: 0.50;
+  display: none;
+}
+
+#display-cronometro h3.ativo {
+  display: block;
 }
 
 .acoes {
@@ -60,4 +76,17 @@ body {
 .acoes button:disabled {
   opacity: 0.5;
   cursor: auto;
+}
+
+#voltas {
+  border-collapse: collapse;
+}
+
+#voltas thead {
+  border-bottom: 1px solid black;
+}
+
+#voltas td, #voltas th {
+  padding: 16px 20px;
+  text-align: center;
 }
