@@ -49,7 +49,7 @@ calcularBtn.addEventListener('click', function () {
   // Converter para unidade de área escolhida
   const areaFinal = converterAreaFinal(tipoUnidadeArea, areaEmMetros2);
 
-  resultadoUnidadeArea.innerHTML = `${areaFinal} ${tipoUnidadeArea}<sup>2</sup>`
+  resultadoUnidadeArea.innerHTML = `${areaFinal.toFixed(2)} ${tipoUnidadeArea}<sup>2</sup>`
 })
 
 document.addEventListener('keydown', (event) => {
