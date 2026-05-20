@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  gap: 12px;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 40px;
+  justify-content: center;
+  background: #f4f4f4;
+}
+
+#form-imc {
+  background: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 32px;
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+  width: clamp(300px, 35vw, 600px);
+}
+
+.form-group-1 {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form-group-1 label {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.form-group-1 input[type=number] {
+  border: 1px solid rgba(0, 0, 0, 0.055);
+  border-radius: 12px;
+  padding: 8px;
+}
+
+button[type=submit] {
+  background-color: rgb(59, 3, 190);
+  padding: 8px;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  margin-top: 8px;
+}
+
+button[type=submit]:hover {
+  background-color: rgb(41, 1, 133);
+}
+
+#resultado {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: clamp(300px, 35vw, 600px);
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#nome-imc {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#valor-imc {
+  opacity: 0.75;
+  padding-bottom: 10px;
+}
+
+#texto-imc {
+  text-align: center;
+}

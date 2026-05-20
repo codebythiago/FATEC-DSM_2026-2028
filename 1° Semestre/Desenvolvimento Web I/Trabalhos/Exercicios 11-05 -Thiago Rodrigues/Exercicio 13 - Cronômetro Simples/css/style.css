@@ -1,0 +1,92 @@
+@font-face {
+  font-family: "DS-DIGITAL";
+  src: url(../fonts/DS-DIGIB.TTF);
+  font-weight: bold;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  gap: 16px;
+}
+
+#cronometro {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+#display-cronometro {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border: 2px solid #c9c9c96c;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  color: rgb(59, 84, 226);
+  background-color: #ffffff;
+  font-family: "DS-DIGITAL";
+}
+
+#display-cronometro h2 {
+  font-size: 64px;
+}
+
+#display-cronometro h3 {
+  font-size: 24px;
+  opacity: 0.50;
+  display: none;
+}
+
+#display-cronometro h3.ativo {
+  display: block;
+}
+
+.acoes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; 
+}
+
+.acoes button {
+  padding: 8px 16px;
+  border: none;
+  background: rgb(1, 1, 92);
+  color: white;
+  border-radius: 500px;
+  cursor: pointer;
+}
+
+.acoes button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+}
+
+#voltas {
+  border-collapse: collapse;
+}
+
+#voltas thead {
+  border-bottom: 1px solid black;
+}
+
+#voltas td, #voltas th {
+  padding: 16px 20px;
+  text-align: center;
+}

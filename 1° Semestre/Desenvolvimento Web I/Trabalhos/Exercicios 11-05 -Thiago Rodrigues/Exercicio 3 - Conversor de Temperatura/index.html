@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Conversor de Temperatura - Exercício 3</title>
+</head>
+<body>
+  <h1>Conversor de Temperatura</h1>
+  <div class="card">
+    <div class="input-group">
+      <label for="temperatura">Temperatura</label>
+      <input type="number" name="temperatura" id="temperatura" step="0.01" placeholder="Ex. 30, 101.12">
+    </div>
+    <div class="input-group">
+      <label for="unidade1">Converter</label>
+      <select name="unidade1" id="unidade1">
+        <option value="celsius" selected>Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+      <label for="unidade2">Para</label>
+      <select name="unidade2" id="unidade2">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit" selected>Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+      </select>
+    </div>
+    <button type="button" id="converter-btn">Converter</button>
+    <div id="resultado">
+      0.00°C equivale à 32.00°F
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

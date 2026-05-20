@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cálculo de Área do Triângulo - Exercício 9</title>
+</head>
+<body>
+  <h1>Cálculo de Área de Triângulo</h1>
+
+  <div class="card">
+    <div class="input-group">
+      <label for="base">Valor do Raio</label>
+      <input type="number" name="raio" id="raio" oninput="if(this.value < 0) this.value = 0" placeholder="Ex.: 10, 4.15. 213...">
+      <label for="unidade-raio">Unidade do Raio</label>
+      <select name="unidade-raio" id="unidade-raio">
+        <option value="mm">Milímetro(s) (mm)</option>
+        <option value="cm">Centímetro(s) (cm)</option>
+        <option value="dm">Decímetro(s) (dm)</option>
+        <option value="m" selected>Metro(s) (m)</option>
+        <option value="dam">Decâmetro(s) (dam)</option>
+        <option value="hm">Hectômetro(s) (hm)</option>
+        <option value="km">Quilômetro(s) (km)</option>
+      </select>
+    </div>
+
+    <button type="button" id="calcular-btn">Calcular Área</button>
+    <div id="container-resultado">
+      <label for="unidade-area" >Unidade da Área do Círculo</label>
+      <select name="unidade-area" id="unidade-area">
+        <option value="mm">Milímetro(s) (mm)</option>
+        <option value="cm">Centímetro(s) (cm)</option>
+        <option value="dm">Decímetro(s) (dm)</option>
+        <option value="m" selected>Metro(s) (m)</option>
+        <option value="dam">Decâmetro(s) (dam)</option>
+        <option value="hm">Hectômetro(s) (hm)</option>
+        <option value="km">Quilômetro(s) (km)</option>
+      </select>
+      <p>Área do Círculo: <b><span id="res-unidade-area">0.00 m<sup>2</sup></span></b></p>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
