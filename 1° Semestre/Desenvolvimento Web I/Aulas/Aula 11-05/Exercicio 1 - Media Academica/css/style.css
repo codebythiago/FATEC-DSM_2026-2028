@@ -66,6 +66,11 @@ button[type=submit] {
   border-radius: 12px;
   color: white;
   margin-top: 8px;
+  cursor: pointer;
+}
+
+button[type=submit]:hover {
+  background-color: rgb(41, 1, 133);
 }
 
 #resultado {
