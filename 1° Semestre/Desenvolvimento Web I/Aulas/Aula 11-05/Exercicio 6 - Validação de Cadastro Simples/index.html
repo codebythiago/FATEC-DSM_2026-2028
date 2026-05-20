@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <title>Validação de Cadasto Simples - Exercício 6</title>
   </head>
   <body>
@@ -12,22 +12,58 @@
       <form id="form-cadastro-simples">
         <div class="input-group">
           <label for="nome">Nome</label>
-          <input type="text" name="nome" id="nome" autocomplete="name" placeholder="Ex.: Thiago Rodrigues dos Santos"/>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            autocomplete="name"
+            placeholder="Ex.: Thiago Rodrigues dos Santos"
+          />
+          <div id="erro-nome" class="erro">
+            O nome deve ter pelo menos 3 caracteres.
+          </div>
         </div>
         <div class="input-group">
           <label for="email">Email</label>
-          <input type="text" name="email" id="email" autocomplete="email" placeholder="Ex.: thiago@email.com"/>
+          <input
+            type="text"
+            name="email"
+            id="email"
+            autocomplete="email"
+            placeholder="Ex.: thiago@email.com"
+          />
+
+          <div id="erro-email" class="erro">Insira um email válido.</div>
         </div>
         <div class="input-group">
           <label for="senha">Digite sua Senha</label>
-          <input type="password" name="senha" id="senha" autocomplete="new-password" placeholder="Digite sua senha"/>
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            autocomplete="new-password"
+            placeholder="Digite sua senha"
+          />
+          <div id="erro-senha" class="erro">
+            A senha deve ter pelo menos 8 caracteres.
+          </div>
         </div>
         <div class="input-group">
           <label for="senha-novamente">Digite novamente sua Senha</label>
-          <input type="password" name="senha-novamente" id="senha-novamente" autocomplete="off" placeholder="Digite novamente sua senha"/>
+          <input
+            type="password"
+            name="senha-novamente"
+            id="senha-novamente"
+            autocomplete="off"
+            placeholder="Digite novamente sua senha"
+          />
+          <div id="erro-senha-novamente" class="erro">
+            As senhas não coincidem.
+          </div>
         </div>
         <button type="submit" id="cadastrar-btn">Cadastrar</button>
       </form>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

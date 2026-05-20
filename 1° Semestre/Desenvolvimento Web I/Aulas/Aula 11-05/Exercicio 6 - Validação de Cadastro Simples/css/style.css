@@ -27,6 +27,12 @@ body {
   width: clamp(300px, 35vw, 600px);
 }
 
+.erro {
+    display: none;
+    color: #d9534f;
+    margin-top: 5px;
+}
+
 .input-group {
   display: flex;
   flex-flow: column nowrap;
@@ -66,24 +72,4 @@ button#cadastrar-btn {
 
 button#cadastrar-btn:hover {
   background-color: rgb(41, 1, 133);
-}
-
-#resultado {
-  border: 1px solid rgba(0, 0, 0, 0.055);
-  padding: 12px;
-  border-radius: 12px;
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 12px;
-}
-
-#resultado div {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-}
-
-#div-res-total {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 12px;
 }
