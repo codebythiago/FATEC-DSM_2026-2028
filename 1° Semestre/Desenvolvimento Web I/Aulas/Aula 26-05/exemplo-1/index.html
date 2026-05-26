@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Cadastro do Aluno & Cálculo do IMC</h2>
+
+      <form id="cadastro-form">
+        <div class="form-group">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" name="nome" id="nome" required minlength="3" />
+          <div class="error" id="error-nome">
+            Por favor, digite o nome completo.
+          </div>
+        </div>
+
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="data-nasc">Data de Nascimento:</label>
+            <input type="date" name="data-nasc" id="data-nasc" required />
+            <div class="error" id="error-data-nasc">Data inválida.</div>
+          </div>
+
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="Ex.: (18) 98187-1485"
+            />
+            <div class="error" id="error-telefone">
+              Insira um telefone válido
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="sexo">Sexo:</label>
+          <div class="radio-group">
+            <input
+              type="radio"
+              name="sexo"
+              id="sexo-masculino"
+              value="masculino"
+              required
+            />
+            <label for="sexo-masculino">Masculino</label>
+            <input
+              type="radio"
+              name="sexo"
+              id="sexo-feminino"
+              value="feminino"
+            />
+            <label for="sexo-feminino">Feminino</label>
+          </div>
+          <div class="error" id="error-sexo">Por favor, selecione um sexo.</div>
+        </div>
+
+        <div class="inline-group">
+          <div class="form-group">
+            <label for="peso">Peso:</label>
+            <input
+              type="number"
+              id="peso"
+              name="peso"
+              required
+              step=".1"
+              min="10"
+              max="300"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="altura">Altura:</label>
+            <input
+              type="number"
+              id="altura"
+              name="altura"
+              required
+              step=".01"
+              min="0.5"
+              max="3.0"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for=""
+              >Linguagens de Programação Preferidas (Selecione pelo menos
+              uma)</label
+            >
+            <div class="checkbox-group" id="linguagens-group">
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="linguagens"
+                  value="JavaScript"
+                  id="javascript"
+                />
+                <label for="javascript">JavaScript</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" name="linguagens" value="PHP" id="php" />
+                <label for="php">PHP</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="linguagens"
+                  value="Java"
+                  id="java"
+                />
+                <label for="java">Java</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="linguagens"
+                  value="Python"
+                  id="python"
+                />
+                <label for="python">Python</label>
+              </div>
+              <div class="checkbox-item">
+                <input type="checkbox" name="linguagens" value="C#" id="c#" />
+                <label for="c#">C#</label>
+              </div>
+              <div class="checkbox-item">
+                <input
+                  type="checkbox"
+                  name="linguagens"
+                  value="Typescript"
+                  id="typecript"
+                />
+                <label for="typescript">TypeScript</label>
+              </div>
+              <div class="error" id="error-linguagens">
+                Selecione pelo menos uma linguagem
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="">Cursos Matriculados</label>
+              <div class="checkbox-group" id="cursos-group">
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="cursos"
+                    value="Desenvolvimento de Sistemas"
+                    id="desenvolvimento-sistemas"
+                  />
+                  <label for="desenvolvimento-sistemas"
+                    >Análise e Desenvolvimento de Sistemas</label
+                  >
+                </div>
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="cursos"
+                    value="Ciência da Computação"
+                    id="ciencia-computacao"
+                  />
+                  <label for="ciencia-computacao">Ciência da Computação</label>
+                </div>
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="cursos"
+                    value="Engenharia de Software"
+                    id="engenharia-software"
+                  />
+                  <label for="engenharia-software"
+                    >Engenharia de Software</label
+                  >
+                </div>
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="cursos"
+                    value="Banco de Dados"
+                    id="banco-dados"
+                  />
+                  <label for="banco-dados">Banco de Dados</label>
+                </div>
+                <div class="checkbox-item">
+                  <input
+                    type="checkbox"
+                    name="cursos"
+                    value="Desenvolvimento de Software Multiplataforma"
+                    id="desenvolvimento-multiplaforma"
+                  />
+                  <label for="desenvolvimento-multiplaforma"
+                    >Desenvolvimento de Sistemas Multiplataforma</label
+                  >
+                </div>
+                <div class="error" id="error-cursos">
+                  Selecione pelo menus um curso.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
